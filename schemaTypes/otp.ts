@@ -27,5 +27,6 @@ export default defineType({
       type: 'boolean',
       initialValue: false,
     }),
+    
   ],
 });

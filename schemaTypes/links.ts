@@ -28,6 +28,15 @@ export default defineType({
       type: 'url',
       validation: (Rule) => Rule.required(),
     }),
+
+    defineField({
+      name: 'description',
+      title: 'Opis',
+      type: 'text',
+      description: 'Dodaj dodatkowe informacje',
+      validation: (Rule) => Rule.max(500).warning('Maksymalnie 500 znaków'),
+    }),
+    
     defineField({
         name: 'createdAt',
         title: 'Data utworzenia',
